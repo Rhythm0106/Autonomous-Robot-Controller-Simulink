@@ -12,7 +12,7 @@ The controller processes LIDAR-based distance sensor inputs to perform real-time
 
 
 
-## 🚀 Key Features
+## Key Features
 * **Robust State Machine:** Stateflow logic handling navigation states (`MoveForward`, `TurnLeft`, `TurnRight`, `Stop`) and high-priority interrupts (`EmergencyStop`, `LowBattery`).
 * **Kinematic Simulation:** Closed-loop verification with a differential drive plant model ($x, y, \theta$).
 * **Automated Verification:** Test Suite created using Simulink Test Manager covering 4 distinct scenarios.
@@ -20,7 +20,7 @@ The controller processes LIDAR-based distance sensor inputs to perform real-time
 * **Code Generation:** Production-ready C code generated via Embedded Coder for the Generic Real-Time (GRT) target.
 
 
-## 🛠️ System Architecture
+## System Architecture
 
 ### 1. Control Logic (The "Brain")
 The decision-making core is built using a **Finite State Machine (FSM)** in Stateflow. It prioritizes safety signals over navigation commands.
